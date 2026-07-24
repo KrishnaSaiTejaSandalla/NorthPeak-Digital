@@ -2,7 +2,7 @@
 
 > A production-ready, ultra-high-performance web application landing page crafted with raw Vanilla HTML5, CSS3 Custom Design System, and modern ES6+ JavaScript.
 
-[![Lighthouse Score](https://img.shields.io/badge/Lighthouse-100%2F100-success?style=for-the-badge&logo=googlechrome)](https://northpeak.digital)
+[![Lighthouse Score](https://img.shields.io/badge/Lighthouse-90%2F100-success?style=for-the-badge&logo=googlechrome)](https://northpeak.digital)
 [![WCAG Accessibility](https://img.shields.io/badge/WCAG%202.1-AAA%20Compliant-blue?style=for-the-badge&logo=w3c)](https://northpeak.digital)
 [![Responsive](https://img.shields.io/badge/Responsive-Mobile%20%7C%20Tablet%20%7C%20Desktop-purple?style=for-the-badge)](https://northpeak.digital)
 
