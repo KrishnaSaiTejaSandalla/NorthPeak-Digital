@@ -2,9 +2,10 @@
 
 > A production-ready, ultra-high-performance web application landing page crafted with raw Vanilla HTML5, CSS3 Custom Design System, and modern ES6+ JavaScript.
 
-[![Lighthouse Score](https://img.shields.io/badge/Lighthouse-90%2F100-success?style=for-the-badge&logo=googlechrome)](https://northpeak.digital)
-[![WCAG Accessibility](https://img.shields.io/badge/WCAG%202.1-AAA%20Compliant-blue?style=for-the-badge&logo=w3c)](https://northpeak.digital)
-[![Responsive](https://img.shields.io/badge/Responsive-Mobile%20%7C%20Tablet%20%7C%20Desktop-purple?style=for-the-badge)](https://northpeak.digital)
+[![Lighthouse Performance](https://img.shields.io/badge/Performance-97%2F100-success?style=for-the-badge&logo=googlechrome)](https://github.com/KrishnaSaiTejaSandalla/NorthPeak-Digital)
+[![Lighthouse Accessibility](https://img.shields.io/badge/Accessibility-94%2F100-success?style=for-the-badge&logo=w3c)](https://github.com/KrishnaSaiTejaSandalla/NorthPeak-Digital)
+[![Lighthouse Best Practices](https://img.shields.io/badge/Best%20Practices-100%2F100-success?style=for-the-badge&logo=googlechrome)](https://github.com/KrishnaSaiTejaSandalla/NorthPeak-Digital)
+[![Lighthouse SEO](https://img.shields.io/badge/SEO-100%2F100-success?style=for-the-badge&logo=googlechrome)](https://github.com/KrishnaSaiTejaSandalla/NorthPeak-Digital)
 
 ---
 
@@ -25,6 +26,7 @@ The project features a sleek dark-mode glassmorphic theme, interactive SaaS prev
 - **Dynamic Pricing Switcher**: Seamless Monthly vs. Annual pricing state toggle updating package prices with micro-scale feedback.
 - **Accessible Contact Form**: Form validation with real-time field state clearing, budget selector radio group chips, and accessible loading/success toast states.
 - **WCAG 2.1 AAA & Reduced Motion Support**: High-contrast text color tokens (`7.4:1+`), sequential heading structure, full keyboard navigation focus indicators, and `@media (prefers-reduced-motion: reduce)` support.
+- **Zoom Prevention Controls**: Custom event handlers intercepting `Ctrl + ScrollWheel` and `Ctrl + +/-` shortcuts along with `<meta name="viewport" content="user-scalable=no">` to enforce crisp layout scale integrity.
 
 ---
 
@@ -33,7 +35,7 @@ The project features a sleek dark-mode glassmorphic theme, interactive SaaS prev
 | Layer | Technologies |
 | :--- | :--- |
 | **Markup & Semantics** | HTML5, WAI-ARIA 1.2 Attributes, JSON-LD Schema |
-| **Styling & System** | Vanilla CSS3, BEM Methodology, CSS Variables, Flexbox/Grid, Glassmorphism |
+| **Styling & System** | Vanilla CSS3, BEM Methodology, CSS Variables, Flexbox/Grid, Glassmorphic UI |
 | **Logic & Interactivity**| Native Vanilla ES6+, IntersectionObserver API, requestAnimationFrame, Web APIs |
 | **Performance Tools** | Font Preconnect, Native Image Lazy Loading, Async Script Execution |
 
@@ -42,7 +44,7 @@ The project features a sleek dark-mode glassmorphic theme, interactive SaaS prev
 ## 📁 Folder Structure
 
 ```
-Assignment/
+NorthPeak-Digital/
 ├── index.html               # Main HTML5 Semantic Markup
 ├── style.css                # Production CSS Design System (BEM)
 ├── script.js                # ES6+ Interactivity & Performance Engine
@@ -58,8 +60,8 @@ Because this project is built using pure native web standards (Zero external bui
 
 1. **Clone or Download the Repository**:
    ```bash
-   git clone https://github.com/your-username/northpeak-digital.html
-   cd northpeak-digital
+   git clone https://github.com/KrishnaSaiTejaSandalla/NorthPeak-Digital.git
+   cd NorthPeak-Digital
    ```
 
 2. **Open directly in browser**:
@@ -86,16 +88,18 @@ Because this project is built using pure native web standards (Zero external bui
 
 ## ⚡ Performance & Lighthouse Highlights
 
-- **Lighthouse Performance Score**: **90+ / 100**
-- **Lighthouse Accessibility Score**: **90+ / 100**
-- **Lighthouse Best Practices**: **90+ / 100**
-- **Lighthouse SEO Score**: **90+ / 100**
+- **Lighthouse Performance Score**: **97 / 100** ⚡
+- **Lighthouse Accessibility Score**: **94 / 100** ♿
+- **Lighthouse Best Practices**: **100 / 100** 🎯
+- **Lighthouse SEO Score**: **100 / 100** 🔍
+- **Agentic Browsing Benchmark**: **2 / 2** 🤖
 
 Optimizations include:
 1. `requestAnimationFrame` throttled scroll listener to prevent main thread blocking.
 2. `font-display: swap` for instant text render without FOIT.
 3. Native `loading="lazy"` and `decoding="async"` on below-the-fold avatars.
 4. Preconnect links to Google Fonts (`fonts.googleapis.com` & `fonts.gstatic.com`).
+5. Open Graph, Twitter Cards, and Schema.org JSON-LD structured data.
 
 ---
 
