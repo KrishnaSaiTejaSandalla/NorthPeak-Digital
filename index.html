@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description"
+    content="NorthPeak Digital is a premier digital agency building high-performance websites, bespoke UI/UX designs, AI integrations, and digital growth strategies for industry leaders.">
+  <meta name="theme-color" content="#09090B">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 2L2 22H7L12 12L17 22H22L12 2Z' fill='%236366F1'/></svg>">
+
+  <!-- Canonical & SEO -->
+  <link rel="canonical" href="https://northpeak.digital/">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NorthPeak Digital — Next-Gen Digital Agency">
+  <meta property="og:description"
+    content="Building digital experiences that shape the future. Web development, UI/UX design, AI integration, and growth engineering.">
+  <meta property="og:url" content="https://northpeak.digital/">
+  <meta property="og:image" content="https://northpeak.digital/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NorthPeak Digital — Next-Gen Digital Agency">
+  <meta name="twitter:description"
+    content="Building digital experiences that shape the future. Web development, UI/UX design, AI integration, and growth engineering.">
+  <meta name="twitter:image" content="https://northpeak.digital/og-image.jpg">
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NorthPeak Digital",
+    "url": "https://northpeak.digital",
+    "logo": "https://northpeak.digital/logo.png",
+    "description": "Next-generation digital agency building high-performance websites, bespoke UI/UX designs, and AI integrations.",
+    "sameAs": [
+      "https://twitter.com/northpeakdigital",
+      "https://github.com/northpeakdigital"
+    ]
+  }
+  </script>
+
+  <title>NorthPeak Digital — Building Digital Experiences That Shape The Future</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme-dark">
+  <!-- Background Glow & Grid Canvas -->
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="bg-mesh__orb bg-mesh__orb--primary"></div>
+    <div class="bg-mesh__orb bg-mesh__orb--secondary"></div>
+    <div class="bg-mesh__grid"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__brand" aria-label="NorthPeak Digital Home">
+        <div class="navbar__logo-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 22H7L12 12L17 22H22L12 2Z" fill="url(#logo-grad-1)" />
+            <path d="M12 7.5L8.5 15H15.5L12 7.5Z" fill="url(#logo-grad-2)" />
+            <defs>
+              <linearGradient id="logo-grad-1" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6366F1" />
+                <stop offset="0.5" stop-color="#8B5CF6" />
+                <stop offset="1" stop-color="#EC4899" />
+              </linearGradient>
+              <linearGradient id="logo-grad-2" x1="8.5" y1="7.5" x2="15.5" y2="15" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFFFFF" />
+                <stop offset="1" stop-color="#CBD5E1" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="navbar__brand-text">NorthPeak<span class="gradient-text">.</span></span>
+      </a>
+
+      <nav class="navbar__nav" id="primary-nav" aria-label="Main Navigation">
+        <ul class="navbar__menu">
+          <li class="navbar__item"><a href="#services" class="navbar__link">Services</a></li>
+          <li class="navbar__item"><a href="#results" class="navbar__link">Results</a></li>
+          <li class="navbar__item"><a href="#pricing" class="navbar__link">Pricing</a></li>
+          <li class="navbar__item"><a href="#contact" class="navbar__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#contact" class="btn btn--primary btn--sm">
+          <span>Start Project</span>
+          <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <button class="navbar__toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-drawer"
+          aria-label="Toggle Navigation Menu">
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer__overlay" id="drawer-overlay"></div>
+    <div class="mobile-drawer__content">
+      <div class="mobile-drawer__header">
+        <span class="navbar__brand-text">NorthPeak<span class="gradient-text">.</span></span>
+        <button class="mobile-drawer__close" id="drawer-close" aria-label="Close Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-drawer__menu">
+        <li><a href="#services" class="mobile-drawer__link">Services</a></li>
+        <li><a href="#results" class="mobile-drawer__link">Results</a></li>
+        <li><a href="#pricing" class="mobile-drawer__link">Pricing</a></li>
+        <li><a href="#contact" class="mobile-drawer__link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer__footer">
+        <a href="#contact" class="btn btn--primary btn--full mobile-drawer__cta">Start Your Project</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <div class="badge hero__badge">
+            <span class="badge__dot"></span>
+            <span class="badge__text">Next-Gen Digital Agency</span>
+          </div>
+
+          <h1 class="hero__title">
+            Building Digital Experiences That <span class="gradient-text">Shape The Future</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            NorthPeak Digital crafts high-performance web applications, bespoke UI/UX interfaces, AI-powered solutions,
+            and high-converting e-commerce experiences for ambitious companies worldwide.
+          </p>
+
+          <div class="hero__cta-group">
+            <a href="#contact" class="btn btn--primary btn--lg hero__btn">
+              <span>Start Your Project</span>
+              <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#services" class="btn btn--secondary btn--lg hero__btn">
+              <span>Explore Our Work</span>
+              <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero__trust-indicator">
+            <div class="avatar-group">
+              <div class="avatar"><img
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+                  alt="Client Avatar Elena" width="38" height="38" loading="eager" decoding="async"></div>
+              <div class="avatar"><img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80"
+                  alt="Client Avatar Marcus" width="38" height="38" loading="eager" decoding="async"></div>
+              <div class="avatar"><img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80"
+                  alt="Client Avatar Sarah" width="38" height="38" loading="eager" decoding="async"></div>
+              <div class="avatar"><img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80"
+                  alt="Client Avatar David" width="38" height="38" loading="eager" decoding="async"></div>
+            </div>
+            <div class="hero__trust-text">
+              <div class="hero__stars" role="img" aria-label="5 out of 5 stars rating">★★★★★</div>
+              <span>Trusted by 50+ hyper-growth startups & global brands</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Right Side SaaS Mockup -->
+        <div class="hero__visual">
+          <div class="hero-window">
+            <div class="hero-window__header">
+              <div class="hero-window__controls">
+                <span class="hero-window__dot hero-window__dot--red"></span>
+                <span class="hero-window__dot hero-window__dot--yellow"></span>
+                <span class="hero-window__dot hero-window__dot--green"></span>
+              </div>
+              <div class="hero-window__title">northpeak-studio-v2.4</div>
+              <div class="hero-window__tabs" role="tablist" aria-label="Studio Preview Modes">
+                <button class="hero-window__tab is-active" role="tab" aria-selected="true" data-tab="tab-ui">UI
+                  System</button>
+                <button class="hero-window__tab" role="tab" aria-selected="false" data-tab="tab-ai">AI Pipeline</button>
+                <button class="hero-window__tab" role="tab" aria-selected="false" data-tab="tab-code">Code</button>
+              </div>
+            </div>
+
+            <div class="hero-window__body">
+              <!-- Tab 1: UI System -->
+              <div class="tab-panel is-active" id="tab-ui" role="tabpanel">
+                <div class="mock-dash">
+                  <div class="mock-dash__top">
+                    <div class="mock-dash__card">
+                      <span class="mock-dash__label">Monthly Conversion</span>
+                      <div class="mock-dash__val-group">
+                        <span class="mock-dash__value">+342%</span>
+                        <span class="mock-dash__badge mock-dash__badge--up">↑ 18.4%</span>
+                      </div>
+                      <div class="sparkline-container">
+                        <svg class="sparkline" viewBox="0 0 200 40">
+                          <path d="M0 35 Q 30 25, 60 30 T 120 15 T 180 5 L 200 2" fill="none" stroke="url(#spark-grad)"
+                            stroke-width="3" stroke-linecap="round" />
+                          <defs>
+                            <linearGradient id="spark-grad" x1="0" y1="0" x2="200" y2="0"
+                              gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#6366F1" />
+                              <stop offset="1" stop-color="#EC4899" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="mock-dash__card">
+                      <span class="mock-dash__label">Core Web Vitals</span>
+                      <div class="mock-dash__val-group">
+                        <span class="mock-dash__value">99 / 100</span>
+                        <span class="mock-dash__badge mock-dash__badge--opt">Optimized</span>
+                      </div>
+                      <div class="mock-progress">
+                        <div class="mock-progress__bar" style="width: 99%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mock-dash__preview">
+                    <div class="mock-wireframe">
+                      <div class="mock-wireframe__nav">
+                        <div class="mock-pill"></div>
+                        <div class="mock-pill mock-pill--sm"></div>
+                      </div>
+                      <div class="mock-wireframe__hero">
+                        <div class="mock-title"></div>
+                        <div class="mock-sub"></div>
+                        <div class="mock-btn-row">
+                          <div class="mock-btn mock-btn--glow"></div>
+                          <div class="mock-btn"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 2: AI Pipeline -->
+              <div class="tab-panel" id="tab-ai" role="tabpanel">
+                <div class="mock-ai">
+                  <div class="mock-ai__prompt">
+                    <span class="mock-ai__icon">⚡</span>
+                    <span class="mock-ai__typewriter" id="typewriter-text">Optimizing design tokens and vector
+                      pipelines...</span>
+                  </div>
+                  <div class="mock-ai__response">
+                    <div class="mock-ai__status">
+                      <span class="status-indicator"></span>
+                      <span>AI Model: NorthPeak-Omni-v4</span>
+                    </div>
+                    <div class="mock-ai__metrics">
+                      <div class="metric-pill"><span>Latency:</span> <strong>24ms</strong></div>
+                      <div class="metric-pill"><span>Throughput:</span> <strong>12.4k t/s</strong></div>
+                      <div class="metric-pill"><span>Accuracy:</span> <strong>99.9%</strong></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 3: Code -->
+              <div class="tab-panel" id="tab-code" role="tabpanel">
+                <pre class="mock-code"><code><span class="code-kw">import</span> { <span class="code-func">createDigitalExperience</span> } <span class="code-kw">from</span> <span class="code-str">'@northpeak/core'</span>;
+
+<span class="code-kw">export const</span> <span class="code-var">agencyConfig</span> = {
+  <span class="code-prop">name</span>: <span class="code-str">'NorthPeak Digital'</span>,
+  <span class="code-prop">speed</span>: <span class="code-num">0.024</span>, <span class="code-comment">// Ultra-low latency</span>
+  <span class="code-prop">stack</span>: [<span class="code-str">'TypeScript'</span>, <span class="code-str">'Next.js'</span>, <span class="code-str">'AI-Engine'</span>],
+  <span class="code-prop">deliverable</span>: <span class="code-func">async</span> () => {
+    <span class="code-kw">return await</span> <span class="code-func">createDigitalExperience</span>({
+      <span class="code-prop">conversionRatio</span>: <span class="code-str">'3.4x'</span>,
+      <span class="code-prop">aestheticLevel</span>: <span class="code-str">'World-Class'</span>
+    });
+  }
+};</code></pre>
+              </div>
+            </div>
+
+            <!-- Floating Badge Card -->
+            <div class="hero-window__float hero-window__float--bottom">
+              <div class="hero-window__float-icon">🚀</div>
+              <div>
+                <div class="hero-window__float-title">Lighthouse Score 100</div>
+                <div class="hero-window__float-sub">Perf • Accessibility • SEO</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST LOGOS MARQUEE / GRID -->
+    <section class="trust-bar" aria-label="Partner Brands">
+      <div class="container">
+        <p class="trust-bar__title">TRUSTED BY TECH INNOVATORS & INDUSTRY LEADERS</p>
+        <div class="trust-bar__logos">
+          <div class="brand-logo">
+            <svg width="120" height="32" viewBox="0 0 120 32" fill="none">
+              <path d="M10 8L20 24H0L10 8Z" fill="#A1A1AA" /><text x="28" y="22" fill="#A1A1AA" font-family="Inter"
+                font-weight="700" font-size="16">APEX</text>
+            </svg>
+          </div>
+          <div class="brand-logo">
+            <svg width="130" height="32" viewBox="0 0 130 32" fill="none">
+              <circle cx="12" cy="16" r="8" stroke="#A1A1AA" stroke-width="3" /><text x="28" y="22" fill="#A1A1AA"
+                font-family="Inter" font-weight="700" font-size="16">NEXUS AI</text>
+            </svg>
+          </div>
+          <div class="brand-logo">
+            <svg width="140" height="32" viewBox="0 0 140 32" fill="none">
+              <path d="M4 24L16 8L28 24" stroke="#A1A1AA" stroke-width="3" /><text x="34" y="22" fill="#A1A1AA"
+                font-family="Inter" font-weight="700" font-size="16">VELOCE</text>
+            </svg>
+          </div>
+          <div class="brand-logo">
+            <svg width="150" height="32" viewBox="0 0 150 32" fill="none">
+              <rect x="4" y="8" width="16" height="16" rx="4" fill="#A1A1AA" /><text x="28" y="22" fill="#A1A1AA"
+                font-family="Inter" font-weight="700" font-size="16">QUANTUM</text>
+            </svg>
+          </div>
+          <div class="brand-logo">
+            <svg width="140" height="32" viewBox="0 0 140 32" fill="none">
+              <path d="M6 16H22M14 8V24" stroke="#A1A1AA" stroke-width="3" /><text x="30" y="22" fill="#A1A1AA"
+                font-family="Inter" font-weight="700" font-size="16">SYNAPSE</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge">
+            <span class="badge__text">OUR EXPERTISE</span>
+          </div>
+          <h2 class="section-title">Engineered For <span class="gradient-text">Digital Leadership</span></h2>
+          <p class="section-subtitle">
+            End-to-end strategy, design, and engineering capabilities built to propel ambitious brands ahead of
+            competition.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <!-- Service 1: Web Development -->
+          <article class="service-card" data-spotlight>
+            <div class="service-card__icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Web Development</h3>
+            <p class="service-card__desc">
+              High-speed, scalable web applications built with React, Next.js, and TypeScript. Optimized for sub-50ms
+              render times and flawless responsiveness.
+            </p>
+            <ul class="service-card__tags">
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <li>WebGL / Three.js</li>
+            </ul>
+          </article>
+
+          <!-- Service 2: UI/UX Design -->
+          <article class="service-card" data-spotlight>
+            <div class="service-card__icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">UI/UX Design</h3>
+            <p class="service-card__desc">
+              Award-winning design systems, interactive prototypes, and pixel-perfect interfaces designed for maximum
+              retention, usability, and brand authority.
+            </p>
+            <ul class="service-card__tags">
+              <li>Design Systems</li>
+              <li>Figma Prototypes</li>
+              <li>Motion Design</li>
+            </ul>
+          </article>
+
+          <!-- Service 3: E-Commerce Solutions -->
+          <article class="service-card" data-spotlight>
+            <div class="service-card__icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">E-Commerce Solutions</h3>
+            <p class="service-card__desc">
+              Headless commerce architectures and bespoke storefronts designed to maximize conversion rates, simplify
+              checkout flows, and scale globally.
+            </p>
+            <ul class="service-card__tags">
+              <li>Headless Shopify</li>
+              <li>Stripe Payments</li>
+              <li>Conversion UX</li>
+            </ul>
+          </article>
+
+          <!-- Service 4: AI Integration -->
+          <article class="service-card" data-spotlight>
+            <div class="service-card__icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">AI Integration</h3>
+            <p class="service-card__desc">
+              Custom LLM workflows, autonomous AI agents, and intelligent recommendation systems seamlessly integrated
+              into your existing software stack.
+            </p>
+            <ul class="service-card__tags">
+              <li>LLM Pipelines</li>
+              <li>OpenAI / Claude API</li>
+              <li>Custom Agents</li>
+            </ul>
+          </article>
+
+          <!-- Service 5: SEO Optimization -->
+          <article class="service-card" data-spotlight>
+            <div class="service-card__icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 6l-9.5 9.5-5-5L1 18M17 6h6v6" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">SEO Optimization</h3>
+            <p class="service-card__desc">
+              Data-driven technical SEO, structured markup, speed engineering, and programmatic content architecture to
+              capture organic traffic dominance.
+            </p>
+            <ul class="service-card__tags">
+              <li>Core Web Vitals</li>
+              <li>Programmatic SEO</li>
+              <li>Rank #1 Strategy</li>
+            </ul>
+          </article>
+
+          <!-- Service 6: Digital Strategy -->
+          <article class="service-card" data-spotlight>
+            <div class="service-card__icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a14.5 14.5 0 000 20 14.5 14.5 0 000-20M2 12h20" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Digital Strategy</h3>
+            <p class="service-card__desc">
+              Product discovery roadmaps, market positioning analysis, and growth acceleration frameworks tailored for
+              venture-backed startups and enterprises.
+            </p>
+            <ul class="service-card__tags">
+              <li>Product Roadmapping</li>
+              <li>Growth Analytics</li>
+              <li>Scale Architecture</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS & TESTIMONIALS SECTION -->
+    <section class="section results" id="results">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge">
+            <span class="badge__text">PROVEN IMPACT</span>
+          </div>
+          <h2 class="section-title">Results That <span class="gradient-text">Speak In Metrics</span></h2>
+          <p class="section-subtitle">
+            We don't just build websites; we engineer revenue acceleration engines for forward-thinking organizations.
+          </p>
+        </div>
+
+        <!-- Stats Counter Grid -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-card__number-wrap">
+              <span class="stat-card__number" data-target="50" data-suffix="+">0</span>
+            </div>
+            <span class="stat-card__label">Enterprise Projects Shipped</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number-wrap">
+              <span class="stat-card__number" data-target="98" data-suffix="%">0</span>
+            </div>
+            <span class="stat-card__label">Client Satisfaction Rate</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number-wrap">
+              <span class="stat-card__number" data-target="3" data-suffix="x">0</span>
+            </div>
+            <span class="stat-card__label">Average Revenue Growth</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number-wrap">
+              <span class="stat-card__number" data-target="24" data-prefix="<" data-suffix="ms">0</span>
+            </div>
+            <span class="stat-card__label">Average Response Latency</span>
+          </div>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-card__rating" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-card__quote">
+              "NorthPeak completely transformed our SaaS platform. Our conversion rate jumped 240% within 30 days of
+              launch, and our Core Web Vitals hit 100 across all devices."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <img class="testimonial-card__avatar"
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+                alt="Elena Rostova, VP of Product at Veloce AI" width="46" height="46" loading="lazy" decoding="async">
+              <div>
+                <h3 class="testimonial-card__name">Elena Rostova</h3>
+                <p class="testimonial-card__role">VP of Product, Veloce AI</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__rating" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-card__quote">
+              "Working with NorthPeak felt like having a YC-level design and engineering team right inside our company.
+              The design aesthetic is truly world-class."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <img class="testimonial-card__avatar"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80"
+                alt="Marcus Chen, Founder & CEO at HyperScale" width="46" height="46" loading="lazy" decoding="async">
+              <div>
+                <h3 class="testimonial-card__name">Marcus Chen</h3>
+                <p class="testimonial-card__role">Founder & CEO, HyperScale</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__rating" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-card__quote">
+              "The custom AI integration and headless store NorthPeak built allowed us to scale from $2M to $8M ARR
+              seamlessly. They set the standard for digital agencies."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <img class="testimonial-card__avatar"
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80"
+                alt="Sarah Jenkins, Head of Growth at Lumina Commerce" width="46" height="46" loading="lazy"
+                decoding="async">
+              <div>
+                <h3 class="testimonial-card__name">Sarah Jenkins</h3>
+                <p class="testimonial-card__role">Head of Growth, Lumina Commerce</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge">
+            <span class="badge__text">TRANSPARENT INVESTMENT</span>
+          </div>
+          <h2 class="section-title">Flexible Plans For <span class="gradient-text">Every Stage</span></h2>
+          <p class="section-subtitle">
+            Simple, transparent pricing backed by guaranteed SLA deliverables. No hidden fees or multi-year lock-ins.
+          </p>
+
+          <!-- Monthly / Annual Toggle Switch -->
+          <div class="pricing-toggle">
+            <span class="pricing-toggle__label is-active" id="label-monthly">Monthly Billing</span>
+            <button class="pricing-toggle__switch" id="billing-switch" aria-label="Toggle Billing Frequency"
+              aria-checked="false" role="switch">
+              <span class="pricing-toggle__slider"></span>
+            </button>
+            <span class="pricing-toggle__label" id="label-annual">
+              Annual Billing
+              <span class="pricing-toggle__discount">Save 20%</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Plan 1: Starter -->
+          <article class="price-card" data-spotlight>
+            <div class="price-card__header">
+              <h3 class="price-card__title">Starter</h3>
+              <p class="price-card__desc">Ideal for early-stage startups needing a high-converting web presence & MVP.
+              </p>
+              <div class="price-card__amount-wrap">
+                <span class="price-card__currency">$</span>
+                <span class="price-card__amount" data-monthly="4,900" data-annual="3,900">4,900</span>
+                <span class="price-card__period">/ month</span>
+              </div>
+            </div>
+
+            <ul class="price-card__features">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> Custom UI/UX Web Design (Up to 5 pages)</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> Next.js & React Implementation</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> Mobile Responsive & Core Web Vitals 95+</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> Basic SEO & Analytics Setup</li>
+              <li class="is-disabled"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M18 6L6 18M6 6l12 12" />
+                </svg> Custom AI Workflows</li>
+              <li class="is-disabled"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M18 6L6 18M6 6l12 12" />
+                </svg> Dedicated Slack Channel & 24/7 SLA</li>
+            </ul>
+
+            <div class="price-card__footer">
+              <a href="#contact" class="btn btn--secondary btn--full">Select Starter Plan</a>
+            </div>
+          </article>
+
+          <!-- Plan 2: Growth (Featured) -->
+          <article class="price-card price-card--featured" data-spotlight>
+            <div class="price-card__badge">MOST POPULAR</div>
+            <div class="price-card__header">
+              <h3 class="price-card__title">Growth</h3>
+              <p class="price-card__desc">Complete digital transformation for scaling businesses seeking category
+                leadership.</p>
+              <div class="price-card__amount-wrap">
+                <span class="price-card__currency">$</span>
+                <span class="price-card__amount" data-monthly="9,900" data-annual="7,900">9,900</span>
+                <span class="price-card__period">/ month</span>
+              </div>
+            </div>
+
+            <ul class="price-card__features">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> Full Multi-Page Web App Architecture</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> Design System & Design Tokens</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> Headless E-Commerce & Stripe Integration</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> AI Integration (Chatbots & Automation)</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> Programmatic SEO & Conversion Optimizations</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> Dedicated Slack Channel & 24h Response SLA</li>
+            </ul>
+
+            <div class="price-card__footer">
+              <a href="#contact" class="btn btn--primary btn--full">Start Growth Plan</a>
+            </div>
+          </article>
+
+          <!-- Plan 3: Enterprise -->
+          <article class="price-card" data-spotlight>
+            <div class="price-card__header">
+              <h3 class="price-card__title">Enterprise</h3>
+              <p class="price-card__desc">Dedicated design & engineering squad for complex enterprise initiatives.</p>
+              <div class="price-card__amount-wrap">
+                <span class="price-card__currency">$</span>
+                <span class="price-card__amount" data-monthly="19,900" data-annual="15,900">19,900</span>
+                <span class="price-card__period">/ month</span>
+              </div>
+            </div>
+
+            <ul class="price-card__features">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> Custom Squad (Designers, Engineers & PM)</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> Proprietary AI Model Fine-Tuning</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> Enterprise Security & SOC2 Compliance</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> Unlimited Revisions & Fast Sprints</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> 1-on-1 Executive Strategy Sessions</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg> 1-Hour Urgent Response SLA</li>
+            </ul>
+
+            <div class="price-card__footer">
+              <a href="#contact" class="btn btn--secondary btn--full">Contact Enterprise Team</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__wrapper">
+          <!-- Left Column: Contact Details -->
+          <div class="contact__info">
+            <div class="badge">
+              <span class="badge__text">START A CONVERSATION</span>
+            </div>
+            <h2 class="section-title">Let's Build Something <span class="gradient-text">Exceptional</span></h2>
+            <p class="section-subtitle">
+              Ready to elevate your digital presence? Send us a message and our team will get back to you within 24
+              hours.
+            </p>
+
+            <div class="contact__sla-card">
+              <div class="contact__sla-icon">⚡</div>
+              <div>
+                <h3 class="contact__sla-title">Guaranteed 24-Hour Reply</h3>
+                <p class="contact__sla-desc">We review every project inquiry personally within one business day.</p>
+              </div>
+            </div>
+
+            <div class="contact__details">
+              <div class="contact__item">
+                <div class="contact__item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <path d="M22 6l-10 7L2 6" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact__item-label">Direct Email</span>
+                  <a href="mailto:hello@northpeak.digital" class="contact__item-val">hello@northpeak.digital</a>
+                </div>
+              </div>
+
+              <div class="contact__item">
+                <div class="contact__item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact__item-label">Global Headquarters</span>
+                  <span class="contact__item-val">San Francisco, CA • Remote Worldwide</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Form -->
+          <div class="contact__form-card">
+            <form id="contact-form" class="form" novalidate>
+              <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+
+              <div class="form__group">
+                <label for="user-name" class="form__label">Your Name <span class="form__req">*</span></label>
+                <input type="text" id="user-name" name="name" class="form__input" placeholder="e.g. Sarah Jenkins"
+                  required aria-required="true" aria-describedby="name-error">
+                <span class="form__error" id="name-error">Please enter your full name</span>
+              </div>
+
+              <div class="form__group">
+                <label for="user-email" class="form__label">Email Address <span class="form__req">*</span></label>
+                <input type="email" id="user-email" name="email" class="form__input"
+                  placeholder="e.g. sarah@company.com" required aria-required="true" aria-describedby="email-error">
+                <span class="form__error" id="email-error">Please enter a valid email address</span>
+              </div>
+
+              <div class="form__group">
+                <label for="project-type" class="form__label">Service Interest</label>
+                <select id="project-type" name="projectType" class="form__select">
+                  <option value="web-dev">Web Development</option>
+                  <option value="ui-ux">UI/UX Design</option>
+                  <option value="ecommerce">E-Commerce Solution</option>
+                  <option value="ai-integration">AI Integration</option>
+                  <option value="seo">SEO & Digital Strategy</option>
+                  <option value="custom">Full Retainer / Custom</option>
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" id="budget-group-label">Estimated Budget</label>
+                <div class="budget-chips" id="budget-chips" role="radiogroup" aria-labelledby="budget-group-label">
+                  <button type="button" class="chip is-active" role="radio" aria-checked="true"
+                    data-budget="$5k-$10k">$5k–$10k</button>
+                  <button type="button" class="chip" role="radio" aria-checked="false"
+                    data-budget="$10k-$25k">$10k–$25k</button>
+                  <button type="button" class="chip" role="radio" aria-checked="false"
+                    data-budget="$25k-$50k">$25k–$50k</button>
+                  <button type="button" class="chip" role="radio" aria-checked="false"
+                    data-budget="$50k+">$50k+</button>
+                </div>
+                <input type="hidden" id="selected-budget" name="budget" value="$5k-$10k">
+              </div>
+
+              <div class="form__group">
+                <label for="user-message" class="form__label">Project Details <span class="form__req">*</span></label>
+                <textarea id="user-message" name="message" class="form__textarea" rows="4"
+                  placeholder="Tell us about your project timeline, goals, and vision..." required aria-required="true"
+                  aria-describedby="message-error"></textarea>
+                <span class="form__error" id="message-error">Please enter at least 10 characters</span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full form__submit" id="submit-btn">
+                <span>Send Message</span>
+                <svg class="btn__icon" width="18" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Task Credits Banner -->
+      <div class="footer__task-badge">
+        <span>Built for Digital Heroes Training Task</span>
+      </div>
+
+      <div class="footer__grid">
+        <div class="footer__brand-col">
+          <a href="#" class="navbar__brand" aria-label="NorthPeak Digital Footer Brand">
+            <div class="navbar__logo-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L2 22H7L12 12L17 22H22L12 2Z" fill="url(#logo-grad-footer)" />
+                <defs>
+                  <linearGradient id="logo-grad-footer" x1="2" y1="2" x2="22" y2="22">
+                    <stop stop-color="#6366F1" />
+                    <stop offset="1" stop-color="#EC4899" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="navbar__brand-text">NorthPeak<span class="gradient-text">.</span></span>
+          </a>
+          <p class="footer__tagline">
+            Next-generation digital agency combining elite engineering, high-end design, and AI automation.
+          </p>
+          <div class="footer__status">
+            <span class="status-dot"></span>
+            <span>All Agency Systems Operational</span>
+          </div>
+        </div>
+
+        <div class="footer__nav-col">
+          <h3 class="footer__nav-title">Navigation</h3>
+          <ul class="footer__links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-col">
+          <h3 class="footer__nav-title">Services</h3>
+          <ul class="footer__links">
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">E-Commerce</a></li>
+            <li><a href="#services">AI Integration</a></li>
+            <li><a href="#services">SEO Optimization</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-col">
+          <h3 class="footer__nav-title">Connect</h3>
+          <ul class="footer__socials">
+            <li><a href="#" aria-label="Twitter X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg> X / Twitter</a></li>
+            <li><a href="#" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg> GitHub</a></li>
+            <li><a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                </svg> LinkedIn</a></li>
+            <li><a href="#" aria-label="Dribbble"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm6.65 6.1a8.43 8.43 0 0 1 2.05 5.34 9 9 0 0 1-.25 2c-.67-.14-2.58-.5-5-1.07.13-.3.26-.6.37-.91 1.46-3.92 2.5-4.95 2.83-5.36zM15.34 6.8a24.2 24.2 0 0 0-2.3 4.26A28.7 28.7 0 0 0 7.8 9.95a8.2 8.2 0 0 1 7.54-3.15zM6.4 11.23a26.8 26.8 0 0 1 5.3 1.13A31.6 31.6 0 0 1 9.9 17.5c-2.43-.88-4.78-1.08-5.26-1.1A8.43 8.43 0 0 1 6.4 11.23zm3.76 8.07a29.8 29.8 0 0 0 1.77-4.94c2.25.56 4.07.91 4.7 1.02a8.4 8.4 0 0 1-6.47 3.92z" />
+                </svg> Dribbble</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 NorthPeak Digital Inc. All rights reserved.</p>
+        <a href="#hero" class="footer__back-to-top" aria-label="Back to top">
+          <span>Back to top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
