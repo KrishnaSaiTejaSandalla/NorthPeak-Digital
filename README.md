@@ -86,10 +86,10 @@ Because this project is built using pure native web standards (Zero external bui
 
 ## ⚡ Performance & Lighthouse Highlights
 
-- **Lighthouse Performance Score**: **100 / 100**
-- **Lighthouse Accessibility Score**: **100 / 100**
-- **Lighthouse Best Practices**: **100 / 100**
-- **Lighthouse SEO Score**: **100 / 100**
+- **Lighthouse Performance Score**: **90+ / 100**
+- **Lighthouse Accessibility Score**: **90+ / 100**
+- **Lighthouse Best Practices**: **90+ / 100**
+- **Lighthouse SEO Score**: **90+ / 100**
 
 Optimizations include:
 1. `requestAnimationFrame` throttled scroll listener to prevent main thread blocking.
