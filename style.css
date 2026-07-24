@@ -1040,7 +1040,7 @@ img {
   }
 
   .brand-logo {
-    opacity: 0.5;
+    opacity: 0.75;
     transition: opacity var(--transition-fast), transform var(--transition-fast);
   }
 
@@ -1416,8 +1416,8 @@ img {
   }
 
   .price-card__features li.is-disabled {
-    color: var(--text-muted);
-    opacity: 0.5;
+    color: #8E9BAE;
+    opacity: 0.85;
   }
 
   .price-card__features li.is-disabled svg {
