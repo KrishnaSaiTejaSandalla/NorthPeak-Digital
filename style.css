@@ -253,7 +253,7 @@ img {
 
 .section-title {
   font-size: clamp(2rem, 4vw, 3rem);
-  margin-top: 1rem;
+  margin-top: 1.75rem;
   margin-bottom: 1.25rem;
 }
 
@@ -1092,23 +1092,25 @@ img {
   }
 
   .service-card__icon-wrap {
-    width: 52px;
-    height: 52px;
-    border-radius: var(--radius-md);
-    background: rgba(99, 102, 241, 0.1);
-    border: 1px solid rgba(99, 102, 241, 0.25);
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.1));
+    border: 1px solid rgba(99, 102, 241, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
     color: #A5B4FC;
-    margin-bottom: 1.5rem;
-    transition: transform var(--transition-normal);
+    margin-bottom: 1.75rem;
+    transition: transform var(--transition-normal), background var(--transition-normal), box-shadow var(--transition-normal);
+    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.08);
   }
 
   .service-card:hover .service-card__icon-wrap {
-    transform: scale(1.08) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
     background: var(--grad-primary);
     color: #FFFFFF;
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35);
   }
 
   .service-card__title {
