@@ -8,6 +8,40 @@ document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
   /* ==========================================================================
+     0. Page Load Trigger (Hero Cinematic Entrance Animation)
+     ========================================================================== */
+  // Trigger CSS hero animations smoothly after load
+  requestAnimationFrame(() => {
+    document.body.classList.add('page-loaded');
+  });
+
+  /* ==========================================================================
+     0.1 Scroll Reveal Observer System
+     Uses native IntersectionObserver for 60fps GPU-accelerated scroll reveals
+     ========================================================================== */
+  const revealElements = document.querySelectorAll('.reveal');
+
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          // Unobserve once revealed for max performance
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  } else {
+    // Fallback for non-supported browsers
+    revealElements.forEach(el => el.classList.add('is-visible'));
+  }
+
+  /* ==========================================================================
      1. Sticky Navbar & Active Link Highlighting
      ========================================================================== */
   const navbar = document.getElementById('navbar');

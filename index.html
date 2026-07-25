@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="NorthPeak Digital is a premier digital agency building high-performance websites, bespoke UI/UX designs, AI integrations, and digital growth strategies for industry leaders.">
   <meta name="theme-color" content="#09090B">
@@ -146,22 +146,23 @@
     <!-- HERO SECTION -->
     <section class="hero" id="hero">
       <div class="container hero__container">
+        <!-- Hero content: entrance animations triggered on load (not scroll) -->
         <div class="hero__content">
-          <div class="badge hero__badge">
+          <div class="badge hero__badge hero-anim hero-anim--badge">
             <span class="badge__dot"></span>
             <span class="badge__text">Next-Gen Digital Agency</span>
           </div>
 
-          <h1 class="hero__title">
+          <h1 class="hero__title hero-anim hero-anim--title">
             Building Digital Experiences That <span class="gradient-text">Shape The Future</span>
           </h1>
 
-          <p class="hero__subtitle">
+          <p class="hero__subtitle hero-anim hero-anim--subtitle">
             NorthPeak Digital crafts high-performance web applications, bespoke UI/UX interfaces, AI-powered solutions,
             and high-converting e-commerce experiences for ambitious companies worldwide.
           </p>
 
-          <div class="hero__cta-group">
+          <div class="hero__cta-group hero-anim hero-anim--cta">
             <a href="#contact" class="btn btn--primary btn--lg hero__btn">
               <span>Start Your Project</span>
               <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -178,7 +179,7 @@
             </a>
           </div>
 
-          <div class="hero__trust-indicator">
+          <div class="hero__trust-indicator hero-anim hero-anim--trust">
             <div class="avatar-group">
               <div class="avatar"><img
                   src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
@@ -201,7 +202,7 @@
         </div>
 
         <!-- Interactive Right Side SaaS Mockup -->
-        <div class="hero__visual">
+        <div class="hero__visual hero-anim hero-anim--visual">
           <div class="hero-window">
             <div class="hero-window__header">
               <div class="hero-window__controls">
@@ -369,7 +370,7 @@
     <!-- SERVICES SECTION -->
     <section class="section services" id="services">
       <div class="container">
-        <div class="section-header text-center">
+        <div class="section-header text-center reveal">
           <div class="badge">
             <span class="badge__text">OUR EXPERTISE</span>
           </div>
@@ -382,7 +383,7 @@
 
         <div class="services__grid">
           <!-- Service 1: Web Development -->
-          <article class="service-card" data-spotlight>
+          <article class="service-card reveal reveal--delay-1" data-spotlight>
             <div class="service-card__icon-wrap">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
@@ -401,7 +402,7 @@
           </article>
 
           <!-- Service 2: UI/UX Design -->
-          <article class="service-card" data-spotlight>
+          <article class="service-card reveal reveal--delay-2" data-spotlight>
             <div class="service-card__icon-wrap">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
@@ -420,7 +421,7 @@
           </article>
 
           <!-- Service 3: E-Commerce Solutions -->
-          <article class="service-card" data-spotlight>
+          <article class="service-card reveal reveal--delay-3" data-spotlight>
             <div class="service-card__icon-wrap">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0" />
@@ -439,7 +440,7 @@
           </article>
 
           <!-- Service 4: AI Integration -->
-          <article class="service-card" data-spotlight>
+          <article class="service-card reveal reveal--delay-1" data-spotlight>
             <div class="service-card__icon-wrap">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path
@@ -459,7 +460,7 @@
           </article>
 
           <!-- Service 5: SEO Optimization -->
-          <article class="service-card" data-spotlight>
+          <article class="service-card reveal reveal--delay-2" data-spotlight>
             <div class="service-card__icon-wrap">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M23 6l-9.5 9.5-5-5L1 18M17 6h6v6" />
@@ -478,7 +479,7 @@
           </article>
 
           <!-- Service 6: Digital Strategy -->
-          <article class="service-card" data-spotlight>
+          <article class="service-card reveal reveal--delay-3" data-spotlight>
             <div class="service-card__icon-wrap">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="10" />
@@ -503,7 +504,7 @@
     <!-- RESULTS & TESTIMONIALS SECTION -->
     <section class="section results" id="results">
       <div class="container">
-        <div class="section-header text-center">
+        <div class="section-header text-center reveal">
           <div class="badge">
             <span class="badge__text">PROVEN IMPACT</span>
           </div>
@@ -515,25 +516,25 @@
 
         <!-- Stats Counter Grid -->
         <div class="stats-grid">
-          <div class="stat-card">
+          <div class="stat-card reveal reveal--delay-1">
             <div class="stat-card__number-wrap">
               <span class="stat-card__number" data-target="50" data-suffix="+">0</span>
             </div>
             <span class="stat-card__label">Enterprise Projects Shipped</span>
           </div>
-          <div class="stat-card">
+          <div class="stat-card reveal reveal--delay-2">
             <div class="stat-card__number-wrap">
               <span class="stat-card__number" data-target="98" data-suffix="%">0</span>
             </div>
             <span class="stat-card__label">Client Satisfaction Rate</span>
           </div>
-          <div class="stat-card">
+          <div class="stat-card reveal reveal--delay-3">
             <div class="stat-card__number-wrap">
               <span class="stat-card__number" data-target="3" data-suffix="x">0</span>
             </div>
             <span class="stat-card__label">Average Revenue Growth</span>
           </div>
-          <div class="stat-card">
+          <div class="stat-card reveal reveal--delay-4">
             <div class="stat-card__number-wrap">
               <span class="stat-card__number" data-target="24" data-prefix="<" data-suffix="ms">0</span>
             </div>
@@ -543,7 +544,7 @@
 
         <!-- Testimonials Grid -->
         <div class="testimonials-grid">
-          <article class="testimonial-card">
+          <article class="testimonial-card reveal reveal--delay-1">
             <div class="testimonial-card__rating" role="img" aria-label="5 out of 5 stars">★★★★★</div>
             <blockquote class="testimonial-card__quote">
               "NorthPeak completely transformed our SaaS platform. Our conversion rate jumped 240% within 30 days of
@@ -560,7 +561,7 @@
             </div>
           </article>
 
-          <article class="testimonial-card">
+          <article class="testimonial-card reveal reveal--delay-2">
             <div class="testimonial-card__rating" role="img" aria-label="5 out of 5 stars">★★★★★</div>
             <blockquote class="testimonial-card__quote">
               "Working with NorthPeak felt like having a YC-level design and engineering team right inside our company.
@@ -577,7 +578,7 @@
             </div>
           </article>
 
-          <article class="testimonial-card">
+          <article class="testimonial-card reveal reveal--delay-3">
             <div class="testimonial-card__rating" role="img" aria-label="5 out of 5 stars">★★★★★</div>
             <blockquote class="testimonial-card__quote">
               "The custom AI integration and headless store NorthPeak built allowed us to scale from $2M to $8M ARR
@@ -601,7 +602,7 @@
     <!-- PRICING SECTION -->
     <section class="section pricing" id="pricing">
       <div class="container">
-        <div class="section-header text-center">
+        <div class="section-header text-center reveal">
           <div class="badge">
             <span class="badge__text">TRANSPARENT INVESTMENT</span>
           </div>
@@ -626,7 +627,7 @@
 
         <div class="pricing-grid">
           <!-- Plan 1: Starter -->
-          <article class="price-card" data-spotlight>
+          <article class="price-card reveal reveal--delay-1" data-spotlight>
             <div class="price-card__header">
               <h3 class="price-card__title">Starter</h3>
               <p class="price-card__desc">Ideal for early-stage startups needing a high-converting web presence & MVP.
@@ -667,7 +668,7 @@
           </article>
 
           <!-- Plan 2: Growth (Featured) -->
-          <article class="price-card price-card--featured" data-spotlight>
+          <article class="price-card price-card--featured reveal reveal--delay-2" data-spotlight>
             <div class="price-card__badge">MOST POPULAR</div>
             <div class="price-card__header">
               <h3 class="price-card__title">Growth</h3>
@@ -707,7 +708,7 @@
           </article>
 
           <!-- Plan 3: Enterprise -->
-          <article class="price-card" data-spotlight>
+          <article class="price-card reveal reveal--delay-3" data-spotlight>
             <div class="price-card__header">
               <h3 class="price-card__title">Enterprise</h3>
               <p class="price-card__desc">Dedicated design & engineering squad for complex enterprise initiatives.</p>
@@ -752,7 +753,7 @@
       <div class="container">
         <div class="contact__wrapper">
           <!-- Left Column: Contact Details -->
-          <div class="contact__info">
+          <div class="contact__info reveal reveal--delay-1">
             <div class="badge">
               <span class="badge__text">START A CONVERSATION</span>
             </div>
@@ -800,7 +801,7 @@
           </div>
 
           <!-- Right Column: Interactive Form -->
-          <div class="contact__form-card">
+          <div class="contact__form-card reveal reveal--delay-2">
             <form id="contact-form" class="form" novalidate>
               <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
 
